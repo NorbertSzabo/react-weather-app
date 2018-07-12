@@ -1,12 +1,13 @@
 import React from 'react';
 
 const SwithCelsiusFarrenheit = (props) => (
-    <div>
+    <div className='scale-switch-buttons'>
         <input
             type="radio"
             name="scale"
             value="C"
-            onChange={(e) => props.handleScaleChange(e.target.value)}/>
+            onChange={(e) => props.handleScaleChange(e.target.value)}
+        />
         &#176;C
 
         <input

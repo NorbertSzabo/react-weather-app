@@ -34,18 +34,64 @@
 .weather-container {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    background-color: #efefef;
+    min-width: 250px;
+    max-width: 400px;
     justify-content: center;
+    min-height: 200px;
 }
 
-.current-weather {
+.weather-cell {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+
+.weather-cell-data {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
 }
 
-.current-weather-details {
+.weather-cell-data h1 {
+    white-space: nowrap;
+}
+
+.weather-cell-details {
     display: flex;
     justify-content: center;
+}
+
+.error-message {
+    color: red;
+}
+
+.forecast-weather {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.location {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #efefef;
+}
+
+.scale-switch-buttons {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #efefef;
+}
+
+.current-weather > div {
+    min-height: 250px;
+    background-color: azure;
+}
+
+.current-weather > div > div > img {
+    height: 150px;
+    width: 150px;
 }
